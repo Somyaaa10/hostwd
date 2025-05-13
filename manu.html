@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML Assignments</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #fc466b, #3f5efb);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    h1 {
+      margin-top: 40px;
+      color: #fff;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+      padding: 40px;
+      width: 90%;
+      max-width: 1000px;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .assignment-box {
+      width: 100%;
+      height: 150px;
+      border-radius: 20px;
+      color: white;
+      font-size: 18px;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      position: relative;
+      overflow: hidden;
+      border: 3px solid yellow;
+      box-shadow: 0 0 15px yellow;
+    }
+
+    .assignment-box:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 30px yellow;
+    }
+
+    .assignment-box::before {
+      content: "";
+      position: absolute;
+      top: -5px;
+      left: -5px;
+      right: -5px;
+      bottom: -5px;
+      background: inherit;
+      filter: blur(15px);
+      z-index: -1;
+      opacity: 0.6;
+    }
+
+    .a1  { background: linear-gradient(135deg, #f6d365, #fda085); }
+    .a2  { background: linear-gradient(135deg, #a1c4fd, #c2e9fb); }
+    .a3  { background: linear-gradient(135deg, #fbc2eb, #a6c1ee); }
+    .a4  { background: linear-gradient(135deg, #ff9a9e, #fecfef); }
+    .a5  { background: linear-gradient(135deg, #ffecd2, #fcb69f); }
+    .a6  { background: linear-gradient(135deg, #c1dfc4, #deecdd); }
+  </style>
+</head><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vivek Vitthal Kodag - Tech Boxes</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #fbc2eb, #a6c1ee);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      overflow: hidden;
+    }
+
+    h1 {
+      margin-top: 40px;
+      font-size: 32px;
+      color: #fff;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.4);
+    }
+
+    h2 {
+      font-size: 20px;
+      margin: 10px;
+      color: #f0f0f0;
+    }
+
+    .info {
+      font-size: 18px;
+      color: #fff;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    .info span {
+      color: #ff6347; /* Tomato color for the name */
+    }
+
+    .container {
+      display: flex;
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .box {
+      width: 200px;
+      height: 200px;
+      border-radius: 20px;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      font-weight: bold;
+      position: relative;
+      z-index: 1;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .box::before {
+      content: "";
+      position: absolute;
+      top: -5px;
+      left: -5px;
+      right: -5px;
+      bottom: -5px;
+      z-index: -1;
+      background: linear-gradient(45deg, #ff6ec4, #7873f5, #42e695, #f9f871);
+      background-size: 400% 400%;
+      border-radius: 25px;
+      animation: glow 6s ease infinite;
+      filter: blur(8px);
+    }
+
+    @keyframes glow {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .box:hover {
+      transform: scale(1.07);
+      box-shadow: 0 0 30px rgba(255, 255, 255, 0.6);
+    }
+
+    .html-box {
+      background: #f06529;
+      border: 4px solid yellow;
+    }
+
+    .css-box {
+      background: #2965f1;
+      border: 4px solid yellow;
+    }
+
+    .xml-box {
+      background: #8e44ad;
+      border: 4px solid yellow;
+    }
+    h1 {
+      margin-top: 40px;
+      color: #24734e;
+      text-shadow: 2px 2px 8px rgba(91, 13, 13, 0.5);
+    }
+
+  </style>
+</head>
+<body>
+
+  <h1>Name : Soham Vikas JADHAV</h1>
+  <h1>Roll NO : 94</h1>
+
+
+  <h1>CSS ASSIGNMENTS</h1>
+
+  <div class="grid">
+    <a href="External.html"><div class="assignment-box a1">External</div></a>
+    <a href="inline.html"><div class="assignment-box a2">inline</div></a>
+    <a href="internal.html"><div class="assignment-box a3">internal</div></a>
+    <a href="Employee.html"><div class="assignment-box a4">Employee</div></a>
+    <a href="Resume.html"><div class="assignment-box a5">Resume</div></a>
+    <a href="video.html"><div class="assignment-box a6">Video Frames</div></a>
+  </div>
+
+</body>
+</html>
+
+
+<!-- CSS -->
+
+
+
+
